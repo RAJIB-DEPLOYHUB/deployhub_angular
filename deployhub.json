@@ -1,0 +1,14 @@
+{
+  "name": "deployhub_angular",
+  "framework": "Angular",
+  "category": "Frontend",
+  "runtime": "static",
+  "port": 80,
+  "buildCommand": "npm install && npm run build",
+  "outputDirectory": "dist/deployhub_angular/browser",
+  "healthCheck": {
+    "path": "/",
+    "expectedStatus": 200,
+    "timeoutSeconds": 10
+  }
+}
